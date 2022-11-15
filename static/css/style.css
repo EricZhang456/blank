@@ -11,7 +11,8 @@ body {
 	grid-area: primary;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
+	gap: 2rem;
 	align-items: center;
 	height: 100%;
 }
@@ -25,6 +26,10 @@ main a {
 	color: #000;
 }
 
+header {
+	font-size: 28px;
+}
+
 main {
 	width: 60%;
 	border-radius: 25px;
@@ -33,6 +38,7 @@ main {
 	background-color: #fff;
 	color: #000;
 }
+
 article {
 	flex: 2;
 }
@@ -45,4 +51,8 @@ aside {
 	padding-left: 20px;
 	border: 2px solid #fff;
 	background-color: #000;
+}
+
+footer {
+	margin-top: auto;
 }
