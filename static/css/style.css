@@ -17,7 +17,7 @@ body {
 	height: 100%;
 }
 
-/* TODO: make a styling better xd */
+/* TODO: make <a> styling better xd */
 
 a {
 	color: #fff;
@@ -37,6 +37,9 @@ main {
 	padding: 10px;
 	background-color: #fff;
 	color: #000;
+	/* this shadow is currently stolen from mdn but it looks nice */
+	/* TODO: replace this */
+	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 article {
@@ -45,7 +48,6 @@ article {
 
 aside {
 	grid-area: sidebar;
-	height: 100vh;
 	padding-top: 40px;
 	padding-right: 40px;
 	padding-left: 20px;
