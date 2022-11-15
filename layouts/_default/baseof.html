@@ -13,8 +13,11 @@
 	{{- end }}
 </head>
 <body>
-	{{ partial "header" . }}
-	{{ block "main" . }}{{ end }}
-	{{ partial "footer" . }}
+	<div class="primary">
+		{{ partial "header" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</div>
+	{{ partial "sidebar.html" . }}
 </body>
 </html>

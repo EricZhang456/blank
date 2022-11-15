@@ -1,0 +1,48 @@
+body {
+	background-color: #607D8B;
+	color: #fff;
+	display: grid;
+	grid-template-areas: "primary sidebar";
+	grid-template-columns: 4fr 1fr;
+	width: 100vw;
+	height: 100vh;
+}
+.primary {
+	grid-area: primary;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+/* TODO: make a styling better xd */
+
+a {
+	color: #fff;
+}
+main a {
+	color: #000;
+}
+
+main {
+	width: 60%;
+	border-radius: 25px;
+	border: 1px solid #FFFF00;
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+}
+article {
+	flex: 2;
+}
+
+aside {
+	grid-area: sidebar;
+	height: 100vh;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-left: 20px;
+	border: 2px solid #fff;
+	background-color: #000;
+}
