@@ -29,6 +29,7 @@ main a {
 
 header {
 	font-size: 28px;
+	font-family: monospace;
 }
 
 main {
@@ -61,4 +62,5 @@ aside {
 
 footer {
 	margin-top: auto;
+	font-family: monospace;
 }
