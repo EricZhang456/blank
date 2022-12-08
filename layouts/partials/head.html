@@ -1,10 +1,22 @@
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	
+	<!-- there must be a better way to do the meta tags -->
+	{{ $summary := .Site.Params.summary }}
+	{{ $author := .Site.Params.author }}
+	{{ $tags := .Site.Params.tags }}
+	{{ if .Page.Params.summary }}{{ $summary = .Page.Params.summary }}{{ end }}
+	{{ if .Page.Params.author }}{{ $author = .Page.Params.author }}{{ end }}
+	{{ if .Page.Params.tags }}{{ $tags = .Page.Params.tags }}{{ end }}
+
+	{{ with $summary }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with $author }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ with $tags }}<meta name="keywords" content="{{ delimit . "," }}">{{ end }}
+	{{ with .Site.Params.msvalidate }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.yandex_verification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
