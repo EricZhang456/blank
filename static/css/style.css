@@ -4,8 +4,9 @@ body {
 	color: #fff;
 	display: grid;
 	grid-template-areas: "primary sidebar";
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 5fr 1fr;
 	height: 100vh;
+	margin: 0px;
 }
 .primary {
 	grid-area: primary;
@@ -17,11 +18,19 @@ body {
 	height: 100%;
 }
 
-/* TODO: make <a> styling better xd */
-
 a {
 	color: #fff;
 }
+
+a:hover {
+	color: #6495ed;
+	text-decoration: underline;
+}
+
+a:focus {
+	color: #808080;
+}
+
 main a {
 	color: #000;
 }
@@ -29,6 +38,21 @@ main a {
 header {
 	font-size: 28px;
 	font-family: 'Source Code Pro', monospace;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+footer a, header a, h1 a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 1000;
+}
+
+footer a:hover, header a:hover {
+	text-decoration: underline;
+	color: #fff;
 }
 
 main {
@@ -41,31 +65,42 @@ main {
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0);
 	font-family: 'Cantarell', 'Ubuntu', 'Candara', sans-serif;
 }
+
+.read_more {
+	font-weight: 501;
+}
+
 .paginator_number {
 	text-align: center;
 }
 
+.comment {
+	outline: 2px solid #80808025;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 60px;
+}
+
 aside {
 	grid-area: sidebar;
-	padding-top: 40px;
-	padding-right: 40px;
-	padding-left: 20px;
+	padding: 40px 20px;
 	border-radius: 8px 0px 0px 8px;
 	box-shadow: -1px 0px 3px 1px #000;
 	background: #333;
 	background: linear-gradient(#333,#222);
-	padding-bottom: 40px;
+	margin: 10px 0px;
 }
 
 .sidebar {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	margin: 3px 10px
+	margin: 3px 10px;
 }
 
 .css_logo {
 	margin-top: auto;
+	margin-left: auto;
 }
 
 footer {
