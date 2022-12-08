@@ -6,19 +6,8 @@
 			<div>
 				{{ .Content }}
 			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			{{ end }}
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
+			{{ if $.Site.Params.giscus.enabled }}
+				{{ partial "comment.html" (dict "giscus" $.Site.Params.giscus) }}
 			{{ end }}
 		</article>
 	</main>
