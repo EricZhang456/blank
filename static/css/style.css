@@ -39,7 +39,7 @@ header {
 	font-size: 28px;
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 600;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 footer a, header a, h1 a {
@@ -58,7 +58,6 @@ footer a:hover, header a:hover {
 main {
 	width: 60%;
 	border-radius: 25px;
-	border: 1px solid #FFFF00;
 	padding: 20px;
 	background-color: #fff;
 	color: #000;
@@ -72,6 +71,8 @@ main {
 
 .paginator_number {
 	text-align: center;
+	font-size: 15px;
+	padding-top: 10px;
 }
 
 .comment {
