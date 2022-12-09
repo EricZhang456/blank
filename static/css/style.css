@@ -1,3 +1,5 @@
+/* flexy box hell */
+
 body {
 	background: #546E7A;
 	background: linear-gradient(90deg, #546E7A, #455A64);
@@ -7,7 +9,9 @@ body {
 	grid-template-columns: 5fr 1fr;
 	height: 100vh;
 	margin: 0px;
+	overflow: hidden;
 }
+
 .primary {
 	grid-area: primary;
 	display: flex;
@@ -16,6 +20,13 @@ body {
 	gap: 2rem;
 	align-items: center;
 	height: 100%;
+	overflow: scroll;
+	-ms-overflow-style: none; /* deprecated! wordaround for ms edge */
+	scrollbar-width: none;
+}
+
+.primary::-webkit-scrollbar {
+	display: none; /* deprecated! wordaround for webkit-based browsers */
 }
 
 a {
@@ -42,7 +53,7 @@ header {
 	padding-top: 20px;
 }
 
-footer a, header a, h1 a {
+footer a,header a, h1 a {
 	text-decoration: none;
 }
 
@@ -74,10 +85,16 @@ main {
 	font-weight: 501;
 }
 
-.paginator_number {
-	text-align: center;
+.paginator {
+	display: flex;
 	font-size: 15px;
-	padding-top: 10px;
+	padding-top: 30px;
+	justify-content: space-around;
+	color: #808080;
+}
+
+.paginator a {
+	color: #808080;
 }
 
 .comment {
@@ -118,6 +135,11 @@ footer {
 	margin-top: auto;
 	font-family: 'Source Code Pro', monospace;
 	padding-bottom: 20px;
+	padding-top: 40px;
 	font-size: 12px;
 	width: 60%;
+}
+
+footer img {
+	padding-bottom: 10px;
 }

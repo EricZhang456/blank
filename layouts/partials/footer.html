@@ -3,10 +3,13 @@
 		<div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></img></a><br></div>
 	{{ end }}
 	<span>&copy; {{ now.Year }} <a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.name }}.</a></span>
+	{{ if .Site.Params.ccbysa }}
+		<span>Unless specified, content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+	{{ end }}
 	{{ with .Site.Params.goatcounter }}
 		<span>This website uses <a href="https://www.goatcounter.com/">GoatCounter</a> to track page views.</span>
 	{{ end }}
-	{{ if .Site.Params.ccbysa }}
-		<span>Unless specified, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+	{{ if .Site.Params.themecred }}
+		<span>Made with <a href="https://gohugo.io">Hugo</a> with a <a href="https://github.com/EricZhang456/blank">forked version of the blank theme</a>.</span>
 	{{ end }}
 </footer>
