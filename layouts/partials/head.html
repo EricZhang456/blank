@@ -5,7 +5,7 @@
 	
 	<!-- there must be a better way to do the meta tags -->
 	{{ $summary := .Site.Params.summary }}
-	{{ $author := .Site.Params.author }}
+	{{ $author := .Site.Author.name }}
 	{{ $tags := .Site.Params.tags }}
 	{{ if .Page.Params.summary }}{{ $summary = .Page.Params.summary }}{{ end }}
 	{{ if .Page.Params.author }}{{ $author = .Page.Params.author }}{{ end }}

@@ -107,4 +107,6 @@ aside {
 footer {
 	margin-top: auto;
 	font-family: 'Source Code Pro', monospace;
+	padding-bottom: 20px;
+	font-size: 15px;
 }

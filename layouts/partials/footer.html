@@ -1,3 +1,6 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+	<span>&copy; {{ now.Year }} <a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.name }}.</a></span>
+	{{ with .Site.Params.goatcounter }}
+		<span>This website uses <a href="https://www.goatcounter.com/">GoatCounter</a> to track page views.</span>
+	{{ end }}
 </footer>
