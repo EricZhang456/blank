@@ -65,6 +65,11 @@ main {
 	font-family: 'Cantarell', 'Ubuntu', 'Candara', sans-serif;
 }
 
+.article_summary {
+	padding-top: 10px;
+	font-size: 20px;
+}
+
 .read_more {
 	font-weight: 501;
 }
@@ -108,5 +113,6 @@ footer {
 	margin-top: auto;
 	font-family: 'Source Code Pro', monospace;
 	padding-bottom: 20px;
-	font-size: 15px;
+	font-size: 12px;
+	width: 60%;
 }

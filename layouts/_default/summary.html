@@ -3,10 +3,8 @@
 	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan. 2, 2006 15:04" }}</time>
 	{{ range .Params.tags }}
 	{{ end }}
-	<div>
-		{{ .Summary }}
-		{{ if .Truncated }}
-			<a href="{{ .Permalink }}" class="read_more">Read more...</a>
-		{{ end }}
+	<div class="article_summary">
+		<span>{{ .Summary }}</span>
+		<span><a href="{{ .Permalink }}" class="read_more">Read more...</a></span>
 	</div>
 </article>
