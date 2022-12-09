@@ -104,6 +104,11 @@ aside {
 	margin: 3px 10px;
 }
 
+.social {
+	display: flex;
+	gap: 0.7rem;
+}
+
 .css_logo {
 	margin-top: auto;
 	margin-left: auto;
