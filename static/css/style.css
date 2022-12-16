@@ -8,7 +8,7 @@ body {
 	grid-template-areas: "primary sidebar";
 	grid-template-columns: 5fr 1fr;
 	height: 100vh;
-	margin: 0px;
+	margin: 0rem;
 	overflow: hidden;
 }
 
@@ -47,10 +47,10 @@ main a {
 }
 
 header {
-	font-size: 28px;
+	font-size: 1.75rem;
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 600;
-	padding-top: 20px;
+	padding-top: 1.25rem;
 }
 
 footer a,header a, h1 a {
@@ -66,19 +66,23 @@ footer a:hover, header a:hover {
 	color: #fff;
 }
 
+.summary_page_title a:hover {
+	text-decoration: none;
+}
+
 main {
 	width: 60%;
-	border-radius: 25px;
-	padding: 20px;
+	border-radius: 1.5625rem;
+	padding: 1.25rem;
 	background-color: #fff;
 	color: #000;
-	box-shadow: 0px 0px 25px 0px rgba(0,0,0);
+	box-shadow: 0rem 0rem 1.5625rem 0rem rgba(0,0,0);
 	font-family: 'Cantarell', 'Ubuntu', 'Candara', sans-serif;
 }
 
 .article_summary {
-	padding-top: 10px;
-	font-size: 20px;
+	padding-top: .625rem;
+	font-size: 1.25rem;
 }
 
 .read_more {
@@ -87,8 +91,8 @@ main {
 
 .paginator {
 	display: flex;
-	font-size: 15px;
-	padding-top: 30px;
+	font-size: .9375rem;
+	padding-top: 1.875rem;
 	justify-content: space-around;
 	color: #808080;
 }
@@ -98,32 +102,32 @@ main {
 }
 
 .comment {
-	outline: 2px solid #80808025;
-	border-radius: 10px;
-	padding: 10px;
-	margin-top: 60px;
+	outline: .125rem solid #80808025;
+	border-radius: .625rem;
+	padding: .625rem;
+	margin-top: 3.75rem;
 }
 
 aside {
 	grid-area: sidebar;
-	padding: 40px 20px;
-	border-radius: 8px 0px 0px 8px;
-	box-shadow: -1px 0px 3px 1px #000;
+	padding: 2.5rem 1.25rem;
+	border-radius: .5rem 0rem 0rem .5rem;
+	box-shadow: -0.0625rem 0rem .1875rem .0625rem #000;
 	background: #333;
 	background: linear-gradient(#333,#222);
-	margin: 10px 0px;
+	margin: .625rem 0rem;
 }
 
 .sidebar {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	margin: 3px 10px;
+	margin: .1875rem .625rem;
 }
 
 .social {
 	display: flex;
-	gap: 0.7rem;
+	gap: .7rem;
 }
 
 .css_logo {
@@ -134,12 +138,12 @@ aside {
 footer {
 	margin-top: auto;
 	font-family: 'Source Code Pro', monospace;
-	padding-bottom: 20px;
-	padding-top: 40px;
-	font-size: 12px;
+	padding-bottom: 1.25rem;
+	padding-top: 2.5rem;
+	font-size: .75rem;
 	width: 60%;
 }
 
 footer img {
-	padding-bottom: 10px;
+	padding-bottom: .625rem;
 }
