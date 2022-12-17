@@ -4,29 +4,18 @@ body {
 	background: #546E7A;
 	background: linear-gradient(90deg, #546E7A, #455A64);
 	color: #fff;
-	display: grid;
-	grid-template-areas: "primary sidebar";
-	grid-template-columns: 5fr 1fr;
 	height: 100vh;
 	margin: 0rem;
-	overflow: hidden;
 }
 
 .primary {
-	grid-area: primary;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 2rem;
 	align-items: center;
 	height: 100%;
-	overflow: scroll;
-	-ms-overflow-style: none; /* deprecated! wordaround for ms edge */
-	scrollbar-width: none;
-}
-
-.primary::-webkit-scrollbar {
-	display: none; /* deprecated! wordaround for webkit-based browsers */
+	width: calc(100% - 10rem);
 }
 
 a {
@@ -109,13 +98,19 @@ main {
 }
 
 aside {
-	grid-area: sidebar;
 	padding: 2.5rem 1.25rem;
 	border-radius: .5rem 0rem 0rem .5rem;
 	box-shadow: -0.0625rem 0rem .1875rem .0625rem #000;
 	background: #333;
 	background: linear-gradient(#333,#222);
 	margin: .625rem 0rem;
+	width: 10rem;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: calc(100% - 6.25rem);
+	height: -webkit-fill-available;
 }
 
 .sidebar {
