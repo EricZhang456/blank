@@ -141,6 +141,17 @@ aside {
 	margin: .1875rem .625rem;
 }
 
+.menu {
+	font-family: 'Cantarell', 'Ubuntu', 'Candara', sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
 .social {
 	display: flex;
 	gap: .7rem;
