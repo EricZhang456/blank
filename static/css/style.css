@@ -61,6 +61,7 @@ footer a:hover, header a:hover {
 
 main {
 	width: 60%;
+	max-width: 50rem;
 	border-radius: 1.5625rem;
 	padding: 1.25rem;
 	background-color: #fff;
@@ -137,6 +138,7 @@ footer {
 	padding-top: 2.5rem;
 	font-size: .75rem;
 	width: 60%;
+	max-width: 50rem;
 }
 
 footer img {
