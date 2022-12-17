@@ -1,5 +1,25 @@
 /* flexy box hell */
 
+/* reading this stylesheet will result in permanent brain damage */
+
+/* printer optimization because book good phone bad */
+
+@media print {
+	aside, header, footer {
+		display: none;
+	}
+	
+	body {
+		background: #fff !important;
+	}
+
+	main {
+		width: 100% !important;
+		border-radius: 0rem !important;
+		box-shadow: none !important;
+	}
+}
+
 body {
 	background: #546E7A;
 	background: linear-gradient(90deg, #546E7A, #455A64);
