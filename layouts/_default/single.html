@@ -7,7 +7,7 @@
 				{{ .Content }}
 			</div>
 			{{ if and ( $.Site.Params.giscus.enabled ) ( eq .Page.Type "posts" ) }}
-				{{ partial "comment.html" (dict "giscus" $.Site.Params.giscus) }}
+				{{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
 			{{ end }}
 		</article>
 	</main>
