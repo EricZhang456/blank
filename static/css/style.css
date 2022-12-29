@@ -125,13 +125,14 @@ aside {
 	background: #333;
 	background: linear-gradient(#333,#222);
 	margin: .625rem 0rem;
-	width: 10rem;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	right: 0;
-	height: calc(100% - 6.25rem);
-	height: -webkit-fill-available;
+	height: 97vh;
+	height: 97dvh;
+	box-sizing: border-box;
+	width: 13rem;
 }
 
 .sidebar {
