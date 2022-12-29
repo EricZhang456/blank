@@ -146,6 +146,7 @@ aside {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	padding-bottom: 2.5rem;
 }
 
 .menu a {
