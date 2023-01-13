@@ -35,7 +35,8 @@ body {
 	gap: 2rem;
 	align-items: center;
 	height: 100%;
-	width: calc(100% - 13rem);
+	width: 60%;
+	max-width: 50rem;
 }
 
 a {
@@ -56,10 +57,16 @@ main a {
 }
 
 header {
+	display: flex;
 	font-size: 1.75rem;
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 600;
 	padding-top: 1.75rem;
+
+}
+
+.site_title {
+	margin-right: auto;
 }
 
 footer a,header a, h1 a {
@@ -80,8 +87,6 @@ footer a:hover, header a:hover {
 }
 
 main {
-	width: 60%;
-	max-width: 50rem;
 	border-radius: 1.5625rem;
 	padding: 1.25rem;
 	background-color: #fff;
@@ -119,33 +124,17 @@ main {
 }
 
 aside {
-	padding: 2.5rem 1.25rem;
-	border-radius: .5rem 0rem 0rem .5rem;
-	box-shadow: -0.0625rem 0rem .1875rem .0625rem #000;
-	background: #333;
-	background: linear-gradient(#333,#222);
-	margin: .625rem 0rem;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 97.4vh;
-	height: 97.4dvh;
-	box-sizing: border-box;
-	width: 13rem;
 }
 
 .sidebar {
 	display: flex;
-	flex-direction: column;
 	height: 100%;
 	margin: .1875rem .625rem;
 }
 
 .menu {
 	font-family: 'Cantarell', 'Ubuntu', 'Candara', sans-serif;
-	display: flex;
-	flex-direction: column;
+	display: inline-flex;
 	gap: 2rem;
 	padding-bottom: 2.5rem;
 }
@@ -155,13 +144,8 @@ aside {
 }
 
 .social {
-	display: flex;
+	display: inline-flex;
 	gap: .7rem;
-}
-
-.css_logo {
-	margin-top: auto;
-	margin-left: auto;
 }
 
 footer {
@@ -170,8 +154,6 @@ footer {
 	padding-bottom: 1.25rem;
 	padding-top: 2.5rem;
 	font-size: .75rem;
-	width: 60%;
-	max-width: 50rem;
 }
 
 footer img {
