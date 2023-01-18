@@ -18,7 +18,5 @@
 	{{ with .Site.Params.yandex_verification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="canonical" href="{{ .Permalink }}">
-	{{ with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
+	<link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/posts/index.xml" title="{{ .Site.Title }}">
 </head>
