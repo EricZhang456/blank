@@ -104,7 +104,7 @@ header {
 	margin-right: auto;
 }
 
-footer a, header:not(.sidebar) a, h1 a {
+footer a, header > a:not(.sidebar), h1 a {
 	text-decoration: none;
 }
 
@@ -112,13 +112,17 @@ h1 {
 	font-weight: 1000;
 }
 
-footer a:hover, header:not(.sidebar) a:hover {
+footer a:hover, header > a:hover:not(.sidebar) {
 	text-decoration: underline;
 	color: #fff;
 }
 
 .summary_page_title a:hover {
 	text-decoration: none;
+}
+
+nav a:visited {
+	color: #fff;
 }
 
 main {
