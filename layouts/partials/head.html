@@ -16,7 +16,7 @@
 	{{ with .Site.Params.msvalidate }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.yandex_verification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
-	{{ with .Site.Parans.color }}<meta name="theme-color" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="canonical" href="{{ .Permalink }}">
 	<link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/posts/index.xml" title="{{ .Site.Title }}">
