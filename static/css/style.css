@@ -122,10 +122,6 @@ footer a:hover, header > a:hover:not(.sidebar) {
 	text-decoration: none;
 }
 
-nav a:visited {
-	color: #fff;
-}
-
 /* stolen from bootstrap */
 .bg-gradient {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
