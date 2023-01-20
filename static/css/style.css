@@ -52,7 +52,7 @@
 	}
 }
 
-/* license information for the fonts used can be found in the LICENSE.fonts */
+/* license information for the fonts used can be found in the LICENSE.fonts file */
 @font-face {
 	font-family: "Cantarell";
 	src: local("Cantarell"), url("/fonts/Cantarell-VF.otf") format("opentype");
