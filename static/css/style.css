@@ -57,6 +57,7 @@ body {
 	background: linear-gradient(90deg, #546E7A, #455A64);
 	color: #fff;
 	height: 100vh;
+	height: 100dvh;
 	margin: 0rem;
 }
 
@@ -125,6 +126,22 @@ nav a:visited {
 	color: #fff;
 }
 
+/* stolen from bootstrap */
+.bg-gradient {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.bg-dark {
+	background: #212529;
+}
+
+
+nav {
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	box-shadow: 0rem 0rem 0.2rem 0rem #000;
+}
+
 main {
 	border-radius: 1.6rem;
 	padding: 1.25rem;
@@ -165,7 +182,6 @@ main {
 .sidebar {
 	font-size: 1.75rem;
 	display: flex;
-	height: 100%;
 	font-family: 'Source Code Pro', monospace;
 	padding: 0.5rem;
 }
