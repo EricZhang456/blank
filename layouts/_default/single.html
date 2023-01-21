@@ -6,9 +6,9 @@
 			<div>
 				{{ .Content }}
 			</div>
-			{{ if and ( $.Site.Params.giscus.enabled ) ( eq .Page.Type "posts" ) }}
+			{{- if and ( $.Site.Params.giscus.enabled ) ( eq .Page.Type "posts" ) }}
 				{{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
-			{{ end }}
+			{{- end }}
 		</article>
 	</main>
 {{ end }}
