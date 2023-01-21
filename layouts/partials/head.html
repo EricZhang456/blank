@@ -10,12 +10,12 @@
 	{{- if .Page.Params.summary }}{{ $summary = .Page.Params.summary }}{{ end }}
 	{{- if .Page.Params.author }}{{ $author = .Page.Params.author }}{{ end }}
 	{{- if .Page.Params.tags }}{{ $tags = .Page.Params.tags }}{{ end }}
-	{{- with $summary }}<meta name="description" content="{{ . }}">{{ end }}
-	{{- with $author }}<meta name="author" content="{{ . }}">{{ end }}
-	{{- with $tags }}<meta name="keywords" content="{{ delimit . "," }}">{{ end }}
-	{{- with .Site.Params.msvalidate }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
-	{{- with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
-	{{- with .Site.Params.yandex_verification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
+	{{ with $summary }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with $author }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ with $tags }}<meta name="keywords" content="{{ delimit . "," }}">{{ end }}
+	{{ with .Site.Params.msvalidate }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.yandex_verification }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.color }}<meta name="theme-color" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="canonical" href="{{ .Permalink }}">
