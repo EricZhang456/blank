@@ -176,7 +176,6 @@ nav {
 }
 
 main {
-	font-size: 1.1rem;
 	border-radius: 1.6rem;
 	padding: 1.25rem;
 	background-color: #fff;
@@ -185,8 +184,43 @@ main {
 	font-family: 'Cantarell', sans-serif;
 }
 
+.page_summary {
+	font-style: italic;
+}
+
+main img {
+	max-width: 80%;
+}
+
+main > iframe:not(.comment) {
+	max-width: 80%;
+}
+
 time {
 	font-size: 0.9rem;
+}
+
+pre {
+	border: 1px solid #d0d7de;
+	border-radius: 0.2rem;
+	padding: 1rem;
+	font-family: "JetBrains Mono", monospace;
+	background-color: #eff1f3;
+}
+
+code {
+	border: 1px solid #d0d7de;
+	border-radius: 0.2rem;
+	padding: 0.1rem;
+	font-family: "JetBrains Mono", monospace;
+	background-color: #eff1f3;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1rem 0rem;
+	padding: 0.2rem 1rem;
 }
 
 .article_summary {
