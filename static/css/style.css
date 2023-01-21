@@ -52,7 +52,7 @@
 	}
 }
 
-/* license information for the fonts used can be found in the LICENSE.fonts file */
+/* licensing information for the fonts used can be found in the LICENSE.fonts file */
 @font-face {
 	font-family: "Cantarell";
 	src: local("Cantarell"), url("/fonts/Cantarell-VF.otf") format("opentype");
@@ -149,6 +149,32 @@ nav {
 	box-shadow: 0rem 0rem 0.2rem 0rem #000;
 }
 
+.page_header {
+	display: flex;
+	align-items: baseline;
+}
+
+.additional_options {
+	margin-left: auto;
+	display: flex;
+}
+
+.additional_options a {
+	text-decoration: none;
+	color: #808080;
+}
+
+.additional_options a:hover {
+	text-decoration: underline;
+}
+
+.rss_logo {
+	padding-right: 1rem;
+	padding-left: 1rem;
+	display: flex;
+	align-items: flex-end;
+}
+
 main {
 	border-radius: 1.6rem;
 	padding: 1.25rem;
@@ -158,18 +184,21 @@ main {
 	font-family: 'Cantarell', sans-serif;
 }
 
+time {
+	font-size: 0.9rem;
+}
+
 .article_summary {
 	padding-top: .625rem;
-	font-size: 1.25rem;
 }
 
 .read_more {
-	font-weight: 501;
+	font-weight: 500;
 }
 
 .paginator {
 	display: flex;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	padding-top: 1.9rem;
 	justify-content: space-around;
 	color: #808080;
