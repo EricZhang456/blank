@@ -63,6 +63,11 @@
 	src: local("JetBrains Mono"), url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: "Source Code Pro";
+	src: local("Source Code Pro"), url("/fonts/SourceCodePro-Regular.ttf.woff2") format("woff2");
+}
+
 body {
 	background: #546E7A;
 	background: linear-gradient(90deg, #546E7A, #455A64);
@@ -204,16 +209,22 @@ pre {
 	border: 1px solid #d0d7de;
 	border-radius: 0.2rem;
 	padding: 1rem;
-	font-family: "JetBrains Mono", monospace;
+	font-family: "Source Code Pro", monospace;
 	background-color: #eff1f3;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 code {
-	border: 1px solid #d0d7de;
 	border-radius: 0.2rem;
-	padding: 0.1rem;
-	font-family: "JetBrains Mono", monospace;
+	padding: 0.1rem 0.25rem;
+	font-family: "Source Code Pro", monospace;
 	background-color: #eff1f3;
+}
+
+pre code {
+	padding: 0rem;
+	background-color: transparent;
 }
 
 blockquote {
