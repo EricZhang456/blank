@@ -295,3 +295,24 @@ footer {
 footer img {
 	padding-bottom: .625rem;
 }
+
+iframe.itunes {
+	width: 80%;
+	max-width: 660px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+iframe.bandcamp {
+	border: 0;
+	width: 80%;
+	height: 120px;
+}
+
+iframe.spotify {
+	border-radius: 12px;
+}
+
+.center {
+	text-align: center;
+}
