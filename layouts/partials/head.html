@@ -6,7 +6,7 @@
 	<title>{{ .Title }}</title>
 	<!-- there must be a better way to do the meta tags -->
 	{{- $summary := .Site.Params.summary }}
-	{{- $author := .Site.Author.name }}
+	{{- $author := .Site.Params.Author.name }}
 	{{- $tags := .Site.Params.tags }}
 	{{- if .Page.Params.summary }}{{ $summary = .Page.Params.summary }}{{ end }}
 	{{- if .Page.Params.author }}{{ $author = .Page.Params.author }}{{ end }}
