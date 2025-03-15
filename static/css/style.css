@@ -82,7 +82,7 @@ body {
 
 header, main, footer {
 	width: 60%;
-	max-width: 50px;
+	max-width: 800px;
 }
 
 .primary {
