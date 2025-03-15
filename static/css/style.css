@@ -15,7 +15,7 @@
 
 	main {
 		width: 100% !important;
-		border-radius: 0rem !important;
+		border-radius: 0px !important;
 		box-shadow: none !important;
 	}
 }
@@ -25,12 +25,12 @@
 		flex-direction: column !important;
 	}
 	.sidebar {
-		padding: 0rem !important;
-		padding-top: 0.5rem !important;
+		padding: 0px !important;
+		padding-top: 8px !important;
 	}
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
 	header, main, footer {
 		width: 80% !important;
 		max-width: 100vw !important;	
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 373px) {
 	.menu {
-		gap: 1rem !important;
+		gap: 16px !important;
 	}
 }
 
@@ -77,19 +77,19 @@ body {
 	color: #fff;
 	height: 100vh;
 	height: 100dvh;
-	margin: 0rem;
+	margin: 0px;
 }
 
 header, main, footer {
 	width: 60%;
-	max-width: 50rem;
+	max-width: 50px;
 }
 
 .primary {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 2rem;
+	gap: 32px;
 	align-items: center;
 	height: 100%;
 }
@@ -113,9 +113,9 @@ main a {
 
 header {
 	display: flex;
-	font-size: 1.75rem;
+	font-size: 28px;
 	font-family: 'JetBrains Mono', monospace;
-	padding-top: 1.75rem;
+	padding-top: 28px;
 	align-items: baseline;
 
 }
@@ -152,9 +152,9 @@ footer a:hover, header > a:hover:not(.sidebar) {
 
 
 nav {
-	padding: 0.8rem;
-	border-radius: 0.5rem;
-	box-shadow: 0rem 0rem 0.2rem 0rem #000;
+	padding: 13px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 3px 0px #000;
 }
 
 .page_header {
@@ -177,18 +177,18 @@ nav {
 }
 
 .rss_logo {
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 16px;
+	padding-left: 16px;
 	display: flex;
 	align-items: flex-end;
 }
 
 main {
-	border-radius: 1.6rem;
-	padding: 1.25rem;
+	border-radius: 25px;
+	padding: 20px;
 	background-color: #fff;
 	color: #000;
-	box-shadow: 0rem 0rem 1.6rem 0rem #000;
+	box-shadow: 0px 0px 25px 0px #000;
 	font-family: 'Cantarell', sans-serif;
 }
 
@@ -205,13 +205,13 @@ main > iframe:not(.comment) {
 }
 
 time {
-	font-size: 0.9rem;
+	font-size: 14px;
 }
 
 pre {
 	border: 1px solid #d0d7de;
-	border-radius: 0.2rem;
-	padding: 1rem;
+	border-radius: 3px;
+	padding: 16px;
 	font-family: "Source Code Pro", monospace;
 	background-color: #eff1f3;
 	white-space: pre-wrap;
@@ -219,26 +219,26 @@ pre {
 }
 
 code {
-	border-radius: 0.2rem;
-	padding: 0.1rem 0.25rem;
+	border-radius: 3px;
+	padding: 1.5px 4px;
 	font-family: "Source Code Pro", monospace;
 	background-color: #eff1f3;
 }
 
 pre code {
-	padding: 0rem;
+	padding: 0px;
 	background-color: transparent;
 }
 
 blockquote {
 	background: #f9f9f9;
 	border-left: 10px solid #ccc;
-	margin: 1rem 0rem;
-	padding: 0.2rem 1rem;
+	margin: 16px 0px;
+	padding: 3px 16px;
 }
 
 .article_summary {
-	padding-top: .625rem;
+	padding-top: 10px;
 }
 
 .read_more {
@@ -247,8 +247,8 @@ blockquote {
 
 .paginator {
 	display: flex;
-	font-size: 0.9rem;
-	padding-top: 1.9rem;
+	font-size: 14px;
+	padding-top: 30px;
 	justify-content: space-around;
 	color: #808080;
 }
@@ -258,22 +258,22 @@ blockquote {
 }
 
 .comment {
-	outline: .125rem solid #80808025;
-	border-radius: .625rem;
-	padding: .625rem;
-	margin-top: 3.75rem;
+	outline: 2px solid #80808025;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 60px;
 }
 
 .sidebar {
-	font-size: 1.75rem;
+	font-size: 28px;
 	display: flex;
 	font-family: 'JetBrains Mono', monospace;
-	padding: 0.5rem;
+	padding: 8px;
 }
 
 .menu {
 	display: inline-flex;
-	gap: 2rem;
+	gap: 32px;
 	flex-wrap: wrap;
 }
 
@@ -283,20 +283,20 @@ blockquote {
 
 .social {
 	display: inline-flex;
-	gap: .7rem;
+	gap: 10px;
 	flex-wrap: wrap;
 }
 
 footer {
 	margin-top: auto;
 	font-family: 'JetBrains Mono', monospace;
-	padding-bottom: 1.25rem;
-	padding-top: 2.5rem;
-	font-size: .75rem;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	font-size: 12px;
 }
 
 footer img {
-	padding-bottom: .625rem;
+	padding-bottom: 10px;
 }
 
 iframe.itunes {
