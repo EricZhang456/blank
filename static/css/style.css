@@ -141,6 +141,10 @@ footer a:hover, header > a:hover:not(.sidebar) {
 	text-decoration: none;
 }
 
+h1.summary_page_title, h1.page_title {
+	margin-bottom: 10px;
+}
+
 /* stolen from bootstrap */
 .bg-gradient {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -297,6 +301,11 @@ footer {
 
 footer img {
 	padding-bottom: 10px;
+}
+
+time.page_date, time.summary_date {
+	font-size: 15px;
+	color: #808080;
 }
 
 iframe.itunes {
