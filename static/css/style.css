@@ -1,9 +1,3 @@
-/* flexy box hell */
-
-/* reading this stylesheet will result in permanent brain damage */
-
-/* printer optimization because book good phone bad */
-
 @media print {
 	header, footer {
 		display: none !important;
@@ -92,6 +86,10 @@ header, main, footer {
 	gap: 32px;
 	align-items: center;
 	height: 100%;
+}
+
+hr {
+	border-top: 1px solid #555;
 }
 
 a {
