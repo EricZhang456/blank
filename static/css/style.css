@@ -143,6 +143,14 @@ h1.summary_page_title, h1.page_title {
 	margin-bottom: 10px;
 }
 
+h1.categories_page_title {
+	margin-bottom: -10px;
+}
+
+.categories_page_title a:hover {
+	text-decoration: none;
+}
+
 /* stolen from bootstrap */
 .bg-gradient {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
