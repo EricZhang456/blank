@@ -2,11 +2,11 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 {{ partial "head" . }}
 <body>
-	{{ partial "goatcounter" . }}
-	<div class="primary">
-		{{ partial "header" . }}
-		{{ block "main" . }}{{ end }}
-		{{ partial "footer" . }}
-	</div>
+    {{ partial "goatcounter" . }}
+    <div class="primary">
+        {{ partial "header" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer" . }}
+    </div>
 </body>
 </html>

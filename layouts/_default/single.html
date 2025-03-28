@@ -1,16 +1,16 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1 {{ if eq .Page.Type "posts" }}class="page_title"{{ else }}class="regular_page_title"{{ end }}>{{ .Title }}</h1>
-			{{ if .Page.Params.date }}<time class="page_date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006 3:04 PM" }}</time>{{ end }}
-			{{ with .Page.Params.summary }}<p class="page_summary">{{ . }}</p>{{ end }}
-			{{- if eq .Page.Type "posts" }}<hr>{{- end }}
-			<div class="main_content">
-				{{ .Content }}
-			</div>
-			{{- if and ( $.Site.Params.giscus.enabled ) ( eq .Page.Type "posts" ) }}
-				{{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
-			{{- end }}
-		</article>
-	</main>
+    <main>
+        <article>
+            <h1 {{ if eq .Page.Type "posts" }}class="page_title"{{ else }}class="regular_page_title"{{ end }}>{{ .Title }}</h1>
+            {{ if .Page.Params.date }}<time class="page_date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006 3:04 PM" }}</time>{{ end }}
+            {{ with .Page.Params.summary }}<p class="page_summary">{{ . }}</p>{{ end }}
+            {{- if eq .Page.Type "posts" }}<hr>{{- end }}
+            <div class="main_content">
+                {{ .Content }}
+            </div>
+            {{- if and ( $.Site.Params.giscus.enabled ) ( eq .Page.Type "posts" ) }}
+                {{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
+            {{- end }}
+        </article>
+    </main>
 {{ end }}
