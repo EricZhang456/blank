@@ -180,6 +180,7 @@ nav {
 .additional_options a {
     text-decoration: none;
     color: #808080;
+    margin-inline: 1px;
 }
 
 .additional_options a:hover {
@@ -187,8 +188,7 @@ nav {
 }
 
 .rss_logo {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-inline: 10px;
     display: flex;
     align-items: flex-end;
 }
