@@ -1,8 +1,8 @@
 <article>
     {{- if eq .Page.Section "categories" }}
-    <h1 class="categories_page_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <h2 class="categories_page_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     {{- else }}
-    <h1 class="summary_page_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <h2 class="summary_page_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     {{- end }}
     {{- if eq .Page.Section "posts" }}<time class="summary_date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006 3:04 PM" }}</time>{{- end }}
     {{ range .Params.tags }}

@@ -122,12 +122,16 @@ header {
     margin-right: auto;
 }
 
-footer a, header > a:not(.sidebar), h1 a {
+footer a, header > a:not(.sidebar), h1 a, h2 a {
     text-decoration: none;
 }
 
 h1 {
-    font-weight: 1000;
+    font-weight: 750;
+}
+
+h1.page_title {
+    margin-bottom: 10px;
 }
 
 footer a:hover, header > a:hover:not(.sidebar) {
@@ -139,11 +143,12 @@ footer a:hover, header > a:hover:not(.sidebar) {
     text-decoration: none;
 }
 
-h1.summary_page_title, h1.page_title {
+h2.summary_page_title, h2.page_title {
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
-h1.categories_page_title {
+h2.categories_page_title {
     margin-bottom: -10px;
 }
 
@@ -251,16 +256,42 @@ blockquote {
     padding-top: 10px;
 }
 
+.article_list {
+    padding-bottom: 10px;
+}
+
 .read_more {
     font-weight: 500;
 }
 
 .paginator {
-    display: flex;
+    display: grid;
+    grid-template-areas: "paginator_previous paginator_number paginator_next";
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
     font-size: 14px;
-    padding-top: 30px;
-    justify-content: space-around;
     color: #808080;
+    text-align: center;
+}
+
+.paginator a {
+    text-decoration: none;
+}
+
+.paginator a:hover {
+    text-decoration: underline;
+}
+
+.paginator_previous {
+    grid-area: paginator_previous;
+}
+
+.paginator_number {
+    grid-area: paginator_number;
+}
+
+.paginator_next {
+    grid-area: paginator_next;
 }
 
 .paginator a {

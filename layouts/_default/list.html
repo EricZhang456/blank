@@ -25,11 +25,12 @@
             <hr>
             {{ with .Content }}<div>{{ . }}</div>{{ end }}
         </div>
-        {{ end }}
-
-        {{ range .Paginator.Pages }}
-            {{ .Render "summary" }}
-        {{ end }}
+        {{- end }}
+        <div class="article_list">
+            {{ range .Paginator.Pages }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
         {{ partial "pagination.html" . }}
     </main>
 {{ end }}
