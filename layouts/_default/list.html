@@ -26,7 +26,11 @@
             {{ with .Content }}<div>{{ . }}</div>{{ end }}
         </div>
         {{- end }}
+        {{- if eq .Page.Section "posts" }}
         <div class="article_list">
+        {{- else }}
+        <div class="summary_title_list">
+        {{- end }}
             {{ range .Paginator.Pages }}
                 {{ .Render "summary" }}
             {{ end }}
