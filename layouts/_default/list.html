@@ -26,10 +26,10 @@
             {{ with .Content }}<div>{{ . }}</div>{{ end }}
         </div>
         {{- end }}
-        {{- if eq .Page.Section "posts" }}
-        <div class="article_list">
-        {{- else }}
+        {{- if and (or (eq .Page.Section "categories") (eq .Page.Section "tags")) (or (.Page.InSection (.GetPage "/categories")) (.Page.InSection (.GetPage "/tags"))) }}
         <div class="summary_title_list">
+        {{- else }}
+        <div class="article_list">
         {{- end }}
             {{ range .Paginator.Pages }}
                 {{ .Render "summary" }}
