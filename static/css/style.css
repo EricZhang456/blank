@@ -12,6 +12,10 @@
         border-radius: 0px !important;
         box-shadow: none !important;
     }
+
+    .comment {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 920px) {
