@@ -237,8 +237,8 @@ pre {
 }
 
 code {
-    border-radius: 3px;
-    padding: 1.5px 4px;
+    border-radius: 5px;
+    padding: 1px 5px;
     font-family: "Source Code Pro", monospace;
     background-color: #eff1f3;
 }
