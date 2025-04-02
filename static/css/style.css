@@ -228,10 +228,10 @@ time {
 
 pre {
     border: 1px solid #d0d7de;
-    border-radius: 3px;
-    padding: 16px;
+    border-radius: 5px;
+    padding: 15px;
     font-family: "Source Code Pro", monospace;
-    background-color: #eff1f3;
+    background-color: #eff1f3 !important;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
