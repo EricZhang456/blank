@@ -218,6 +218,22 @@ main img {
     max-width: 80%;
 }
 
+.fancy_image_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fancy_image_image {
+    margin: auto;
+}
+
+.fancy_image_caption {
+    text-align: center;
+    font-style: italic;
+    color: #616161;
+}
+
 main > iframe:not(.comment) {
     max-width: 80%;
 }

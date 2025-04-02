@@ -1,0 +1,7 @@
+{{ $original := .Page.Resources.GetMatch (.Get "src") }}
+{{ $processed := $original.Process (.Get "process") }}
+<a href="{{ $original.RelPermalink }}" target="_blank">
+    <img src="{{ $processed.RelPermalink }}" 
+    {{- with (.Get "alt") }} alt="{{ . }}" {{ end -}} 
+    {{- with (.Get "title") }} title="{{ . }}" {{ end -}}>
+</a>
