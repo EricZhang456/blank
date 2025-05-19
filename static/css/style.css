@@ -57,16 +57,19 @@
 @font-face {
     font-family: "Cantarell";
     src: local("Cantarell"), url("/fonts/Cantarell-VF.otf") format("opentype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
     src: local("JetBrains Mono"), url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Source Code Pro";
     src: local("Source Code Pro"), url("/fonts/SourceCodePro-Regular.ttf.woff2") format("woff2");
+    font-display: swap;
 }
 
 body {
