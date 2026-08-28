@@ -9,7 +9,7 @@
     {{ end }}
     {{- if eq .Page.Section "posts" }}
     <div class="article_summary">
-        <span>{{ .Summary }}</span>
+        <span>{{ .Summary | plainify | truncate 120 }}</span>
     </div>
     {{- end }}
 </article>
