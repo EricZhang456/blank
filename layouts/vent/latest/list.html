@@ -1,0 +1,7 @@
+{{ define "main" }}
+    <main>
+        {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Section" "vent") }}
+            <p>You will be redirected. Click <a href="{{ .RelPermalink }}">here</a> if nothing happens.</p>
+        {{ end }}
+    </main>
+{{ end }}

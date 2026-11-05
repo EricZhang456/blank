@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <main>
+        <div>
+            <div class="page_header vent_page_header">
+                <h1>Random Thoughts</h1>
+                <div class="additional_options">
+                     <a class="rss_logo" href="{{ relURL "vent/index.xml" }}">{{- partial "rss-logo.html" . -}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="vent_title_list">
+            {{ range .Paginator.Pages }}
+            <h2 class="categories_page_title vent_page_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ end }}
+        </div>
+        {{ partial "pagination.html" . }}
+    </main>
+{{ end }}
