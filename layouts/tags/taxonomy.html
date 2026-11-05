@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <main>
+        <div>
+            <div class="page_header">
+                {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+                <div class="additional_options">
+                    <a href="{{ relURL "posts" }}">[ All posts ]</a>
+                    {{- with .Site.GetPage "/categories" }}<a href="{{ relURL "categories" }}">[ Categories ]</a>{{- end }}
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="summary_title_list">
+            {{ range .Paginator.Pages }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
+        {{ partial "pagination.html" . }}
+    </main>
+{{ end }}
