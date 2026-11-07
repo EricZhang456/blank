@@ -4,7 +4,7 @@
             <div class="page_header vent_header">
                 {{ if .Page.Params.date }}<time class="vent_date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
                 <div class="additional_options">
-                    <a class="rss_logo" href="{{ relURL "vent/index.xml" }}">{{- partial "rss-logo.html" . -}}</a>
+                    <a class="rss_logo" href="{{ relURL "random/index.xml" }}">{{- partial "rss-logo.html" . -}}</a>
                 </div>
             </div>
             <div class="main_content">

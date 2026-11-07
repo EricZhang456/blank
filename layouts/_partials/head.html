@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="{{ relURL "css/style.css" }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{- if eq .Section "vent" -}}
-    <link rel="alternate" type="application/rss+xml" href="{{ absURL "/vent/index.xml" }}" title="{{ "Vent on Eric's Site" | transform.HTMLEscape }}">
+    <link rel="alternate" type="application/rss+xml" href="{{ absURL "/random/index.xml" }}" title="{{ "Vent on Eric's Site" | transform.HTMLEscape }}">
     {{- else -}}
     <link rel="alternate" type="application/rss+xml" href="{{ absURL "/posts/index.xml" }}" title="{{ .Site.Title }}">
     {{- end -}}
     {{/* awful hack */}}
-    {{ if hasPrefix .Path "/vent/latest" }}{{ partial "latest" . }}{{ end }}
+    {{ if hasPrefix .Path "/random/latest" }}{{ partial "latest" . }}{{ end }}
 </head>
