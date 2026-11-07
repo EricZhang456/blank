@@ -369,6 +369,10 @@ blockquote {
     margin-top: 60px;
 }
 
+.vent_comment {
+    margin-top: 40px;
+}
+
 .sidebar {
     font-size: 28px;
     display: flex;

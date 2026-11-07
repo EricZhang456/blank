@@ -10,6 +10,11 @@
             <div class="main_content">
                 {{ .Content }}
             </div>
+            {{- if $.Site.Params.giscus.enabled }}
+            <div class="comment vent_comment">
+                {{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
+            </div>
+            {{- end }}
         </article>
 
         <div class="paginator vent_paginator">

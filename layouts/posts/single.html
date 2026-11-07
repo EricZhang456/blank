@@ -8,7 +8,9 @@
                 {{ .Content }}
             </div>
             {{- if $.Site.Params.giscus.enabled }}
+            <div class="comment">
                 {{ partial "comment.html" ( dict "giscus" $.Site.Params.giscus ) }}
+            </div>
             {{- end }}
         </article>
     </main>
