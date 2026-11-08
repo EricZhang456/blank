@@ -12,7 +12,7 @@
     {{- if .Site.Params.themecred }}
     <span>Made with <a href="https://gohugo.io/">Hugo</a>.</span>
     {{- end }}
-    {{- if and ( eq .Page.Kind "page" ) ( eq .Page.Type "posts" ) ( $.Site.Params.giscus.enabled ) }}
+    {{- if and ( eq .Page.Kind "page" ) (or ( eq .Page.Type "posts" ) ( eq .Page.Type "random" )) ( $.Site.Params.giscus.enabled ) }}
     <span>Comments system powered by <a href="https://giscus.app/">Giscus</a>. <a href="https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md">[ Privacy policy ]</a></span>
     {{- end }}
 </footer>
