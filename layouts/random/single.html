@@ -7,7 +7,7 @@
                     <a class="rss_logo" href="{{ relURL "random/index.xml" }}">{{- partial "rss-logo.html" . -}}</a>
                 </div>
             </div>
-            <div class="main_content">
+            <div class="main_content vent_content">
                 {{ .Content }}
             </div>
             {{- if $.Site.Params.giscus.enabled }}
