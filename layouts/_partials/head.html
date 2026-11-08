@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ relURL "css/style.css" }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{- if eq .Section "random" -}}
-    <link rel="alternate" type="application/rss+xml" href="{{ absURL "/random/index.xml" }}" title="{{ "Random on Eric's Site" | transform.HTMLEscape }}">
+    <link rel="alternate" type="application/rss+xml" href="{{ absURL "/random/index.xml" }}" title="{{ "Randoms on Eric's Site" | transform.HTMLEscape }}">
     {{- else -}}
     <link rel="alternate" type="application/rss+xml" href="{{ absURL "/posts/index.xml" }}" title="{{ .Site.Title }}">
     {{- end -}}
