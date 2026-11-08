@@ -1,0 +1,9 @@
+<figure class="fancy_image_box">
+    <a href="{{ .Page.Resources.GetMatch (.Get "src") }}">
+            <img class="fancy_image_image" src="{{ .Page.Resources.GetMatch (.Get "src") }}"
+                {{- with (.Get "alt") }} alt="{{ . }}"{{ end -}}
+                {{- with (.Get "title") }} title="{{ . }}"{{ end -}}
+            >
+    </a>
+    {{- with (.Get "caption") }}<figcaption class="fancy_image_caption">{{ . }}</figcaption>{{ end -}}
+</figure>

@@ -1,18 +1,6 @@
-{{- if and .IsBlock .PlainText -}}
-  <figure class="fancy_image_box">
-    <a href="{{ .Destination | safeURL }}">
-        <img class="fancy_image_image" src="{{ .Destination | safeURL }}"
-          {{- with .PlainText }} alt="{{ . }}"{{ end -}}
-          {{- with .Title }} title="{{ . }}"{{ end -}}
-        >
-    </a>
-    {{- with .Title }}<figcaption class="fancy_image_caption">{{ . }}</figcaption>{{ end -}}
-  </figure>
-{{- else -}}
-    <a href="{{ .Destination | safeURL }}">
-        <img src="{{ .Destination | safeURL }}"
-        {{- with .PlainText }} alt="{{ . }}"{{ end -}}
-        {{- with .Title }} title="{{ . }}"{{ end -}}
-        >
-    </a>
-{{- end -}}
+<a href="{{ .Destination | safeURL }}">
+    <img src="{{ .Destination | safeURL }}"
+    {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+    {{- with .Title }} title="{{ . }}"{{ end -}}
+    >
+</a>
